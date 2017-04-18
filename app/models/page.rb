@@ -11,7 +11,7 @@ class Page < ApplicationRecord
     tag_content1 = []
     tag_content2 = []
     tag_content3 = []
-    header_attribs = {}
+
     doc.css('a').each do |link|
       page_obj.urls << link.attributes["href"].value
     end
@@ -27,6 +27,7 @@ class Page < ApplicationRecord
     doc.css('h3').each do |tag|
       tag_content3.push(tag.content)
     end
+
     header_attribs_h1 = {
                header_tag: "h1",
                content: tag_content1
@@ -39,9 +40,11 @@ class Page < ApplicationRecord
                 header_tag: "h3",
                 content: tag_content3
     }
+
     page_obj.headers << header_attribs_h1 
     page_obj.headers << header_attribs_h2
     page_obj.headers << header_attribs_h3
     page_obj.headers
+
   end
 end

@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 20170416134752) do
   enable_extension "plpgsql"
 
   create_table "pages", force: :cascade do |t|
-    t.text     "content"
     t.string   "page_url"
     t.string   "urls",       default: [],              array: true
     t.json     "headers",    default: [],              array: true
