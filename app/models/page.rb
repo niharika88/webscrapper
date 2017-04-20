@@ -1,11 +1,11 @@
 class Page < ApplicationRecord
+  validates :page_url, presence: true
   before_create :index_content
 
   require 'nokogiri'
   require 'open-uri'
 
   def index_content
-
     doc = Nokogiri::HTML(open(self.page_url))
     page_obj = self
     tag_content1 = []
@@ -29,19 +29,19 @@ class Page < ApplicationRecord
     end
 
     header_attribs_h1 = {
-               header_tag: "h1",
-               content: tag_content1
+      header_tag: "h1",
+      content: tag_content1
     }
     header_attribs_h2 = {
-               header_tag: "h2",
-               content: tag_content2
+      header_tag: "h2",
+      content: tag_content2
     }
     header_attribs_h3 = {
-                header_tag: "h3",
-                content: tag_content3
+      header_tag: "h3",
+      content: tag_content3
     }
 
-    page_obj.headers << header_attribs_h1 
+    page_obj.headers << header_attribs_h1
     page_obj.headers << header_attribs_h2
     page_obj.headers << header_attribs_h3
     page_obj.headers
