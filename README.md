@@ -1,6 +1,6 @@
 # README
 
-This is an api to parse a page and index it,s contents. 
+This is an api to parse a page and index the contents. 
 
 This follows a certain criteria :
 
