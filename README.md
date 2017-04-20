@@ -102,4 +102,21 @@ Listing the stored contents (Index)
 http://localhost:3000/pages.json 
 
 ```
+Screenshots
+===============
 
+1. Create/Post data to the server for indexing the content from a url:
+
+![Alt text](app/assets/images/Screen%20Shot%202017-04-20%20at%206.03.06%20AM.png?raw=true "curl / create")
+
+2.Server query/response after Post
+
+![Alt text](app/assets/images/Screen%20Shot%202017-04-20%20at%206.03.32%20AM.png?raw=true "curl / response")
+
+3.Server Snapshot On create Insert query
+
+![Alt text](app/assets/images/Screen%20Shot%202017-04-20%20at%206.03.54%20AM.png?raw=true " server")
+
+4. Indexed Content
+
+![Alt text](app/assets/images/Screen%20Shot%202017-04-20%20at%206.02.23%20AM.png?raw=true "index")
