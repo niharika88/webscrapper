@@ -33,6 +33,7 @@ gem 'rack-cors'
 gem 'rack-attack'
 gem 'factory_girl'
 gem 'rails-controller-testing'
+gem 'apitome'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -57,3 +58,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'apipie-rails'
+gem 'rspec_api_documentation'

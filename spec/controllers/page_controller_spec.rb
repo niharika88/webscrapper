@@ -1,4 +1,3 @@
-# require 'support/factory_girl'
 require 'rails_helper'
 require 'spec_helper'
 

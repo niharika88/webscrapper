@@ -1,5 +1,4 @@
 require "rails_helper"
-
 RSpec.describe Page do
 
   describe "Attributes Check" do
